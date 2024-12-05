@@ -1,0 +1,758 @@
+/* Généralités */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+header, .bio-container, .what-i-do, .skills, .events, .employer-reviews, .localization {
+  padding: 10px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+
+.bio-container {
+  display: flex;
+  flex-wrap: wrap; /* Permet aux éléments de se replier sur plusieurs lignes sur les petits écrans */
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap; /* Permet d'adapter les services sur plusieurs lignes */
+  justify-content: center;
+  gap: 20px;
+}
+
+.services .service {
+  width: 100%; /* 100% pour petits écrans, modifiable avec les media queries */
+  max-width: 300px; /* Limite la largeur pour éviter des services trop larges */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1, h2 {
+  font-size: 2em; /* Taille d'écriture dynamique */
+}
+
+/* HEADER */
+header {
+  position:center;
+ 
+  padding: 20px;
+  text-align: center;
+  background-color: #1f1f1f;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+header p {
+  font-size: 14px;
+  color: #aaaaaa;
+}
+
+/* BIOGRAPHIE */
+.biography {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.bio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.bio-photo {
+  width: 120px;
+  border-radius: 50%;
+}
+
+.bio-info {
+  max-width: 600px;
+  text-align: left;
+}
+
+.bio-info h2 {
+  margin-bottom: 10px;
+}
+
+.bio-info p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #cccccc;
+}
+
+.contact-info p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.contact-info a {
+  color: #6f7e73;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* SERVICES */
+.what-i-do {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.what-i-do h2 {
+  margin-bottom: 20px;
+}
+
+.services {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.services .service {
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 10px;
+  width: 150px;
+  text-align: center;
+}
+
+/* COMPÉTENCES */
+
+
+
+
+
+.skills {
+  padding: 40px 20px;
+  width: 1000px;
+  margin: 0 auto; /* Centre horizontalement */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centre les éléments à l'intérieur de la section */
+}
+
+.skills h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.skills .skill {
+  margin-bottom: 20px;
+  width: 100%; /* Assure que chaque barre prend toute la largeur disponible de .skills */
+  max-width: 600px; /* Limite la largeur maximale des barres */
+}
+
+.skills .skill span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.skills .progress-bar {
+  background-color: #1f1f1f;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 10px;
+  width: 100%; /* La barre occupe toute la largeur disponible */
+}
+
+.skills .progress-bar div {
+  height: 10px;
+  background-color: #1f8b19;
+  width: 0%; /* Initialement, la largeur commence à 0% */
+  animation: fill-bar 2s infinite alternate; /* Ajout de l'animation */
+}
+
+/* Animations personnalisées pour chaque barre */
+@keyframes fill-bar-1 {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 30%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+@keyframes fill-bar-2 {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 85%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+@keyframes fill-bar-3 {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 90%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+@keyframes fill-bar-4 {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 70%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+@keyframes fill-bar-5 {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 80%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+@keyframes fill-bar-6 {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+@keyframes fill-bar-7 {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 70%; /* Ajuste ici pour un pourcentage spécifique */
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+/* Classes spécifiques pour chaque barre de progression */
+.skill-1 .progress-bar div {
+  animation: fill-bar-1 10s infinite alternate;
+}
+
+.skill-2 .progress-bar div {
+  animation: fill-bar-2 10s infinite alternate;
+}
+
+.skill-3 .progress-bar div {
+  animation: fill-bar-3 10s infinite alternate;
+}
+
+.skill-4 .progress-bar div {
+  animation: fill-bar-4 10s infinite alternate;
+}
+
+.skill-5 .progress-bar div {
+  animation: fill-bar-5 10s infinite alternate;
+}
+
+.skill-6 .progress-bar div {
+  animation: fill-bar-6 10s infinite alternate;
+}
+
+.skill-7 .progress-bar div {
+  animation: fill-bar-7 10s infinite alternate;
+}
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+/* ÉVÉNEMENTS */
+.events {
+  padding: 40px 20px;
+  text-align: center;
+  width: 1000px; /* Largeur définie pour la section */
+  margin: 0 auto; /* Centre horizontalement */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centre les éléments à l'intérieur de la section */
+}
+
+.events h2 {
+  margin-bottom: 20px;
+}
+
+.events ul {
+  list-style: none;
+  padding: 0;
+  width: 100%; /* Les éléments de la liste occupent toute la largeur disponible */
+  max-width: 600px; /* Limite la largeur maximale de la liste */
+}
+
+.events li {
+  margin-bottom: 10px;
+  background-color: #4b4747;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%; /* Les éléments de la liste prennent toute la largeur de leur conteneur */
+  box-sizing: border-box; /* Assure que les marges et padding ne dépassent pas la largeur définie */
+}
+
+
+/* AVIS EMPLOYEURS */
+.employer-reviews {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.employer-reviews h2 {
+  margin-bottom: 20px;
+}
+
+.review-slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px;
+  scroll-behavior: smooth;
+}
+
+.review-slider::-webkit-scrollbar {
+  height: 8px;
+}
+
+.review-slider::-webkit-scrollbar-thumb {
+  background-color: #444444;
+  border-radius: 10px;
+}
+
+.review {
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.review img {
+  width: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.review p {
+  font-size: 14px;
+}
+/* Bouton de contact */
+.contact-btn {
+  background-color: #44c767;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.contact-btn:hover {
+  background-color: #36a758;
+}
+
+/* Section de contact masquée par défaut */
+.contact-info {
+  display: none;
+  margin-top: 20px;
+}
+
+.contact-info p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.contact-info a {
+  color: #44c767;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+.navigation {
+  position: center;
+  width: auto;
+  height: 70px;
+  background-color: 
+  
+  
+  #1f1f1f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.navigation ul {
+  display: flex;
+  width: 350px;
+}
+.navigation ul li {
+  position: relative;
+  list-style: none;
+  width: 70px;
+  height: 70px;
+  z-index: 1;
+}
+.navigation ul li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+}
+.navigation ul li a .icon {
+  position: relative;
+  display: block;
+  line-height: 75px;
+  font-size: 1.5em;
+  text-align: center;
+  transition: 0.5s;
+  color: rgb(255, 255, 255);
+}
+.navigation ul li.active a .icon {
+  transform: translateY(-32px);
+}
+.navigation ul li a .text {
+  position: absolute;
+  color: whitesmoke;
+  font-weight: 400;
+  font-size: 0.75em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.navigation ul li.active a .text {
+  opacity: 1;
+  transform: translateY(10px);
+}
+.indicator {
+  position: absolute;
+  top: -50%;
+  width: 70px;
+  height: 70px;
+  background-color: #373737;
+  border-radius: 50%;
+  border: 6px solid var(--clr);
+  transition: 0.5s;
+}
+.indicator::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -22px;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border-top-right-radius: 20px;
+  box-shadow: 1px -10px 0 0 var(--clr);
+}
+.navigation
+{
+  top: 30px;
+  display: flex;
+  position: relative;
+  margin: auto;
+}
+.indicator::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -22px;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border-top-left-radius: 20px;
+  box-shadow: -1px -10px 0 0 var(--clr);
+}
+.navigation ul li:nth-child(1).active ~ .indicator {
+  transform: translateX(calc(70px * 0));
+}
+.navigation ul li:nth-child(2).active ~ .indicator {
+  transform: translateX(calc(70px * 1));
+}
+.navigation ul li:nth-child(3).active ~ .indicator {
+  transform: translateX(calc(70px * 2));
+}
+.navigation ul li:nth-child(4).active ~ .indicator {
+  transform: translateX(calc(70px * 3));
+}
+.navigation ul li:nth-child(5).active ~ .indicator {
+  transform: translateX(calc(70px * 4));
+}
+.localization {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.localization h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+#map {
+  width: 100%;
+  height: 400px;
+  border: 1px solid #1f1f1f; /* Optionnel pour un contour propre */
+  border-radius: 10px;       /* Coins arrondis pour un meilleur rendu */
+}
+.bio-photo{
+  box-shadow: #1f8b19;
+}
+
+/* Barre de recherche
+
+/* Section de recherche */
+.search-section {
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.search-section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar {
+    width: 300px;
+    height: 40px;
+    background-color: #000; /* Fond noir */
+    color: #fff; /* Texte blanc */
+    border: 2px solid #00ff00; /* Contour vert */
+    border-radius: 5px; /* Coins arrondis */
+    padding: 0 10px;
+    font-size: 16px;
+
+    /* Transition pour l'animation */
+    transition: all 0.3s ease-in-out;
+}
+
+.search-bar::placeholder {
+    color: #ccc; /* Couleur du texte du placeholder */
+}
+
+/* Effet au focus */
+.search-bar:focus {
+    outline: none; /* Retire le contour bleu par défaut */
+    border-color: #00cc00; /* Contour vert foncé */
+    background-color: #222; /* Fond légèrement plus clair */
+    width: 400px; /* La barre s’agrandit */
+    box-shadow: 0 0 10px #00ff00; /* Lueur verte autour */
+}
+
+
+
+/* Section Projets */
+.projects {
+  padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects h2 {
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+.project {
+  background-color: #2d2d2d;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  position: relative; /* Pour positionner l'icône de manière absolue */
+}
+
+.project-info {
+  text-align: center;
+}
+
+.project-info h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.project-info p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  object-fit: cover;
+  max-width: 300px;
+  max-height: 200px;
+  margin: 0 auto;
+  opacity: 0.95;
+  transition: opacity 0.3s ease;
+}
+
+.project-link {
+  font-size: 1.2em;
+  color: #1f8b19;
+  text-decoration: none;
+  border: 2px solid #1f8b19;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.project-link:hover {
+  background-color: #1f8b19;
+  color: #fff;
+}
+
+/* Icône œil centré et vert */
+.view-icon {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centrer l'icône */
+  font-size: 5em;
+  color: #1f8b19; /* Vert */
+  opacity: 0; /* Initialement caché */
+  transition: opacity 0.3s ease;
+}
+
+.project:hover .view-icon {
+  opacity: 1; /* Icône apparaît au survol */
+}
+
+.project:hover .project-image {
+  opacity: 0.7; /* L'image devient plus transparente lors du survol */
+}
+
+
+/* Parallax Effect */
+.parallax {
+  position: relative;
+  background-image: url('../assets/par.jpg'); /* Mettez l'image de fond que vous souhaitez */
+  height: 500px; /* Hauteur de la section */
+  background-attachment: fixed; /* L'effet de parallaxe est activé avec fixed */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(37, 119, 50);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fe0000;
+}
+
+.parallax h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.parallax p {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .skills {
+      width: 100%;
+      font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .events{
+      width: 100%;
+      font-size: 14px;
+  }
+}

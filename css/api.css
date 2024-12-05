@@ -1,0 +1,42 @@
+h1 {
+    text-align: center;
+    color: #f07511;
+}
+
+.articles {
+    margin-top: 20px;
+}
+
+.article {
+    background-color: #2420206b;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: auto;
+    justify-content: center;
+
+}
+
+.article h2 {
+    color: #db821c;
+    font-size: 1.5em;
+}
+
+.article p {
+    font-size: 1em;
+    color: #dddddd;
+    margin: 10px 0;
+}
+
+.article a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #bd7b26;
+    text-decoration: none;
+}
+
+.article a:hover {
+    text-decoration: underline;
+}

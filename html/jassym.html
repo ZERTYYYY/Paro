@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Jassym Ferah</title>
+    <link rel="stylesheet" href="../css/jassym.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-pzjw8f+ua7Kw1TIq0f4DoW5xu68mVA+7IduQbck5A1z6c9YZ9tnD4k4VsI6tG6Xx" crossorigin="anonymous">
+</head>
+
+        
+    
+
+<body>
+
+
+            
+<header>
+    
+  <div class="navigation">
+    <ul>
+        <li class="list active">
+            <a href="../index.html">
+                <span class="icon"><i class="fas fa-home"></i></span>
+                <span class="text">Home</span>
+            </a>
+        </li>
+
+        <li class="list">
+            <a href="../html/contact.html">
+                <span class="icon"><i class="fas fa-user"></i></span>
+                <span class="text">contact</span>
+            </a>
+        </li>
+
+        <li class="list">
+            <a href="../html/partenaires.html">
+                <span class="icon"><i class="fas fa-comment-dots"></i></span>
+                <span class="text">Partenaire</span>
+            </a>
+        </li>
+
+        <li class="list">
+            <a href="../php/recherche.php">
+                <span class="icon"><i class="fas fa-photo-video"></i></span>
+                <span class="text">Recherche</span>
+            </a>
+        </li>
+
+        <div class="indicator"></div>
+    </ul>
+</div>
+
+</header>
+
+
+<header>
+ 
+ 
+
+
+    <h1>Portfolio - Jassym Ferah</h1>
+    <p>Étudiant en cybersécurité à Guardia School</p>
+</div>
+</section>
+</header>
+
+<section class="biography">
+    <div class="bio-container">
+        <img src="../assets/my-avatar.png" alt="Jassym Ferah" class="bio-photo">
+        <div class="bio-info">
+            
+            <h2>Jassym Ferah</h2>
+            <p>Passionné par la cybersécurité, je suis étudiant à Guardia School à Lyon. Mon objectif est de renforcer la sécurité des systèmes et de prévenir les cyberattaques grâce à des solutions innovantes.</p>
+
+            <button id="contact-btn" class="contact-btn">Mes contacts</button>
+
+            <div id="contact-info" class="contact-info">
+                <p>Email : <a href="mailto:jferah@guardiaschool.fr">jferah@guardiaschool.fr</a></p>
+                <p>LinkedIn : <a href="https://www.linkedin.com/in/jassymferah" target="_blank">Mon LinkedIn</a></p>
+                <p>GitHub : <a href="https://github.com/ZERTYYYY" target="_blank">Mon GitHub</a></p>
+                <p>Téléphone : <a href="tel:+33912345678">+33 1 23 45 67 89</a></p>
+                <p>Localisation : Lyon, France</p>
+                <section class="location">
+                  <h2>Localisation</h2>
+                  <div id="map" style="width: 100%; height: 400px;"></div>
+                </section>
+                
+                
+            </div>
+
+
+<!-- Barre de recherche -->
+
+
+
+           
+
+
+<!-- Barre de recherche -->
+
+
+
+                </div>
+            </section>
+
+            
+    
+           
+            
+        </div>
+    </div>
+</section>
+
+<section class="what-i-do">
+    <h2>Ce que je fais</h2>
+    <div class="services">
+        <div class="service">
+            <h3>Pentest</h3>
+            <p>Analyse des vulnérabilités des systèmes.</p>
+        </div>
+        <div class="service">
+            <h3>Script Python</h3>
+            <p>Automatisation des processus de sécurité.</p>
+        </div>
+        <div class="service">
+            <h3>OWASP</h3>
+            <p>Exploitation des failles applicatives.</p>
+        </div>
+        <div class="service">
+            <h3>Dev full stack</h3>
+            <p>Exploitation des failles applicatives.</p>
+        </div>
+        <div class="service">
+            <h3>GCTF</h3>
+            <p>Exploitation des failles applicatives.</p>
+        </div>
+        <div class="service">
+            <h3>PWN</h3>
+            <p>Exploitation des failles applicatives.</p>
+        </div>
+    </div>
+</section>
+
+<section class="skills">
+    <h2>Compétences</h2>
+    <div class="skill skill-1">
+        <span>Python</span>
+        <div class="progress-bar">
+            <div></div>
+        </div>
+    </div>
+    <div class="skill skill-2">
+        <span>Kali Linux</span>
+        <div class="progress-bar">
+            <div></div>
+        </div>
+    </div>
+    <div class="skill skill-3">
+        <span>SQL Injection</span>
+        <div class="progress-bar">
+            <div></div>
+        </div>
+    </div>
+    <div class="skill skill-4">
+        <span>Arduino</span>
+        <div class="progress-bar">
+            <div></div>
+        </div>
+    </div>
+    <div class="skill skill-5">
+        <span>Pentest</span>
+        <div class="progress-bar">
+            <div></div>
+        </div>
+    </div>
+    <div class="skill skill-6">
+        <span>Cryptographie</span>
+        <div class="progress-bar">
+            <div></div>
+        </div>
+    </div>
+    <div class="skill skill-7">
+        <span>OSINT</span>
+        <div class="progress-bar">
+            <div></div>
+        </div>
+    </div>
+</section>
+
+
+<section class="events">
+    <h2>Événements réalisés</h2>
+    <ul>
+        <li>Participation au Hackathon CyberSec 2024</li>
+        <li>Analyse de sécurité pour un site web fictif (OWASP Bricks)</li>
+        <li>Création d'un script Python pour brute force</li>
+        <li>Participation au WorldSkills cloud</li>
+        <li>Particitpation au GCTF 2K24</li>
+        <li>Création d'un framework python</li>
+        <li>CRSF champ</li>
+        <li>Wireshark </li>
+        <li>Création d'un script Python pour brute force</li>
+        <li>Participation au Hackathon CyberSec 2024</li>
+        <li>Analyse de sécurité pour un site web fictif (OWASP Bricks)</li>
+        <li>Création d'un script Python pour brute force</li>
+    </ul>
+</section>
+
+</section>
+
+
+<section class="projects">
+    <h2>Projets</h2>
+    <div class="project">
+        <div class="project-info">
+            <img src="../assets/project-1.jpg" alt="Test d'Intrusion sur une Application Web" class="project-image">
+            <h3>Test d'Intrusion sur une Application Web</h3>
+            <p>Un projet de test d'intrusion complet visant à évaluer la sécurité d'une application web, y compris les injections SQL et les failles XSS.</p>
+            <a href="lien-vers-projet-1.html" class="project-link">Voir le projet</a>
+            <span class="view-icon">&#128065;</span> <!-- Icône œil -->
+        </div>
+    </div>
+    <div class="project">
+        <div class="project-info">
+            <img src="../assets/project-1.jpg" alt="Audit de Sécurité d'une Infrastructure Réseau" class="project-image">
+            <h3>Audit de Sécurité d'une Infrastructure Réseau</h3>
+            <p>Analyse approfondie des vulnérabilités d'une infrastructure réseau en entreprise, avec recommandations pour renforcer la sécurité.</p>
+            <a href="lien-vers-projet-2.html" class="project-link">Voir le projet</a>
+            <span class="view-icon">&#128065;</span> <!-- Icône œil -->
+        </div>
+    </div>
+    <div class="project">
+        <div class="project-info">
+            <img src="../assets/project-1.jpg" alt="Développement d'un Outil de Pentesting" class="project-image">
+            <h3>Développement d'un Outil de Pentesting</h3>
+            <p>Création d'un outil de pentesting personnalisé permettant d'analyser les failles de sécurité dans les systèmes en temps réel.</p>
+            <a href="#" class="project-link">Voir le projet</a>
+            <span class="view-icon">&#128065;</span> <!-- Icône œil -->
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<section class="employer-reviews">
+    <h2>Avis Employeurs</h2>
+    <div class="review-slider">
+        <div class="review">
+            <img src="../assets/avatar-1.png" alt="Employeur 1">
+            <p>« Très satisfait du travail de Jassym, notamment sur les tests d'intrusion. »</p>
+            <strong>- Jean Dupont</strong>
+        </div>
+        <div class="review">
+            <img src="../assets/avatar-2.png" alt="Employeur 2">
+            <p>« Son expertise en sécurité applicative est impressionnante. »</p>
+            <strong>- Claire Martin</strong>
+        </div>
+        <div class="review">
+            <img src="../assets/avatar-3.png" alt="Employeur 3">
+            <p>« Excellent travail sur l'analyse de failles. »</p>
+            <strong>- Paul Lemoine</strong>
+        </div>
+        <div class="review">
+            <img src="../assets/avatar-1.png" alt="Employeur 4">
+            <p>« Un travail de grande qualité, je recommande. »</p>
+            <strong>- Sophie Moreau</strong>
+        </div>
+        <!-- Ajout de nouveaux avis centrés sur la cybersécurité -->
+        <div class="review">
+            <img src="../assets/avatar-2.png" alt="Employeur 5">
+            <p>« Grâce à l'expertise en cybersécurité de Jassym, notre infrastructure est désormais bien protégée contre les cyberattaques. »</p>
+            <strong>- Alain Lefevre</strong>
+        </div>
+        <div class="review">
+            <img src="../assets/avatar-3.png" alt="Employeur 6">
+            <p>« Son audit de sécurité a permis de détecter des vulnérabilités critiques dans notre système. Une vraie valeur ajoutée ! »</p>
+            <strong>- Emma Dubois</strong>
+        </div>
+        <div class="review">
+            <img src="../assets/avatar-4.png" alt="Employeur 7">
+            <p>« Une analyse de risques claire et bien menée, ce qui nous a permis de mieux anticiper les menaces potentielles. »</p>
+            <strong>- Marc Robert</strong>
+        </div>
+        <div class="review">
+            <img src="../assets/avatar-1.png" alt="Employeur 8">
+            <p>« Grâce à son expertise en pentesting, nous avons renforcé la sécurité de nos applications web. »</p>
+            <strong>- Laura Girard</strong>
+        </div>
+    </div>
+</section>
+
+
+<!-- Autres sections (compétences, événements, avis employeurs) -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="../js/jassym.js"></script>
+<script src="../js/map.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

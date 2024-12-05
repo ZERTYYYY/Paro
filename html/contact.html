@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="../css/contact.css">
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<video autoplay muted loop id="background-video">
+		<source src="../img/background_index.mp4" type="video/mp4">
+		Votre navigateur ne supporte pas les vidéos HTML5.
+	  </video>
+  <!-- Barre de navigation -->
+  <div class="progress_container">
+    <div class="progress_bar"></div>
+</div>
+  
+<section class="top-nav">
+  <input id="menu-toggle" type="checkbox" />
+  <label class="menu-button-container" for="menu-toggle">
+    <div class="menu-button"></div>
+  </label>
+  <ul class="menu">
+    <li><a href="../index.html">Accueil</a></li>
+    <li><a href="../html/partenaires.html">Partenaire</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+<a href="https://guardia.school/campus/lyon.html?utm_term=&utm_campaign=PMX+GU+-+Etudiants&utm_source=adwords&utm_medium=ppc&hsa_acc=1749547295&hsa_cam=20907422767&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQiA0fu5BhDQARIsAMXUBOLF5lQxduMnrC_3qKBJVAWHTUJK-DNhqhYN9tiGD5igEzrigsmo3pAaAjjzEALw_wcB">
+<img src="../img/guardiagif.gif" alt="Logo" class="logo" href="test.html">
+</a>
+</section>
+
+<br>
+  <!-- Section Informations -->
+  <section id="info" class="info-section">
+    <div>
+      <div class="demander">
+        <h2>Informations de Contact</h2>
+        <p><strong>Adresse :</strong> 123 Rue Exemple, Paris</p>
+        <p><strong>Téléphone :</strong> 01 23 45 67 89</p>
+        <p><strong>Email :</strong> contact@monsite.com</p>
+      </div>
+      <div class="demander" >Vos demandes concernent ? :</div>
+    </div>
+  </section>
+
+  <!-- Formulaire de contact -->
+  <section id="contact" class="contact-section">
+    <h2>Contactez-nous</h2>
+    <form class="contact-form" action="..\php\contact.php" method="POST">
+      <label for="name">Nom :</label>
+      <input type="text" id="name" name="name" placeholder="Votre nom" required>
+  
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" placeholder="Votre email" required>
+  
+      <label for="message">Message :</label>
+      <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+  
+      <button type="submit">Envoyer</button>
+  </form>
+  
+  </section>
+
+  <!-- Section Avis -->
+  
+
+
+  
+</body>
+</html>

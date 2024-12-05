@@ -1,0 +1,120 @@
+.titel_l{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 60px;
+    font-size: 33px;
+    font-family:'Silkscreen';
+    color: rgb(44, 158, 161);
+}
+.titel_l:hover{
+    text-shadow:
+    0px 0px 5px rgb(0, 217, 255),
+    0px 0px 10px rgb(0, 217, 255),
+    0px 0px 15px rgb(0, 217, 255),
+    0px 0px 20px rgb(0, 217, 255),
+    0px 0px 35px rgb(0, 217, 255);
+}
+
+
+.search-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.search-bar{
+    text-align: center;
+    width: 750px;
+    height: 60px;
+    background-color: rgba(61, 54, 54, 0.253);
+    border: 3px  solid rgb(12, 204, 252, 0.795);
+    border-radius: 40px;
+    color:white;
+}
+.search-bar{
+    background-image: url(/img/recherche.png);
+    background-repeat:no-repeat ;
+    background-position: 20px center;
+    background-size: 40px 40px;
+}
+
+.search-bar:hover{
+    text-shadow:
+    0px 0px 5px rgb(0, 217, 255),
+    0px 0px 10px rgb(0, 217, 255),
+    0px 0px 15px rgb(0, 217, 255),
+    0px 0px 20px rgb(0, 217, 255),
+    0px 0px 35px rgb(0, 217, 255);
+}
+
+.search-bar::placeholder{
+    color: rgb(167, 227, 255);
+}
+
+
+.search-bar:focus{
+    outline: none;
+    border: 10px;
+    border-color:rgb(67, 167, 233) ;
+    background-color:rgba(31, 31, 30, 0.932);
+    width: 750px;
+    
+    box-shadow: 0 0 30px rgb(0, 255, 255), 0 0 10px rgba(0, 247, 255, 0.6); /* Effet néon accentué au clic */
+      
+}
+
+
+
+.row {
+    display: flex;
+    position: relative;
+    color:  rgb(167, 227, 255); 
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:400px;
+    margin-top: 100px;
+}
+
+#typeFilter {
+    font-size: 18px;   
+    width: 150px;  
+    height: 20px;
+    border-radius: 5px;  
+    border: 2px solid #007bff;  /* Bordure bleue autour de la barre */
+    color:rgb(167, 227, 255);
+    background:rgba(61, 54, 54, 0.253) ;
+}
+
+option{
+    color: black;
+}
+
+.search-nom{
+    font-size: 15px;
+    color: aqua;
+    width: 150px;
+    height: 20px;
+    border-radius: 5px;
+    border: 2px solid #007bff;
+    background:rgba(61, 54, 54, 0.253) ;
+}
+
+.search-nom::placeholder{
+    color:rgb(167, 227, 255);
+}
+
+.search-contenu{
+    font-size: 15px;
+    color: aqua;
+    width: 150px;
+    height: 20px;
+    border-radius: 5px;
+    border: 2px solid #007bff;
+    background:rgba(61, 54, 54, 0.253) ;
+}
+
+.search-contenu::placeholder{
+    color:rgb(167, 227, 255);
+}
